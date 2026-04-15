@@ -42,10 +42,10 @@ stock-price-direction-prediction/
     
 ## Installation
 
-# Clone the repository
+## Clone the repository
 git clone
 
-# Install dependencies
+## Install dependencies
 pip install pandas numpy matplotlib scikit-learn xgboost kagglehub
 
 # Download dataset (automatic on first run)
@@ -53,29 +53,30 @@ pip install pandas numpy matplotlib scikit-learn xgboost kagglehub
 
 ## Usage
 
-# Training Models
-# Train the models by running:
+## Training Models
+**Train the models by running:**
 python train.py
 
-# This will:
+## This will:
     Load and preprocess the data
     Engineer 18 technical features
     Train both models
     Evaluate on test set (2012-2017)
     Save models and visualizations
 
-# Making Predictions
-# You can predict on new data (a different dataset) as long as it has the same structure as the stocks that the kaggle datasets use:
+## Making Predictions
+**You can predict on new data (a different dataset) as long as it has the same structure as the stocks that the kaggle datasets use:**
 python predict.py amzn.us.txt rf
 
-# Evaluate with accuracy:
+## Evaluate with accuracy:
 python predict.py msft.us.txt rf eval
 
-# Or other models (using your own model shouldn't be hard at all to add):
+## Or other models (using your own model shouldn't be hard at all to add):
 python predict.py amzn.us.txt xgb eval
 
 ## Results
-# Model performance (accuracy):
+
+## Model performance (accuracy):
 Random Forest: 51.69%
 XGBoost: 50.95%
 Baseline (Random): 50%
@@ -91,12 +92,13 @@ This suggests short-term momentum effects exist in AAPL stock, at least i think.
 3) **Market Regimes:** Rolling 30-day accuracy varies significantly (30% to 70%), suggesting the model performs better in certain market conditions.
 
 ## Methodology
-# Data Preprocessing
+
+## Data Preprocessing
     Train/Test Split: Time-based split at January 1, 2012 (roughly a 80/20 split)
     Feature Scaling: Not required for tree-based models
     Missing Values: Dropped 199 rows (warm-up period for indicators)
 
-# Model Configuration
+## Model Configuration
 Random Forest:
     200 estimators
     Max depth: 10
@@ -122,5 +124,5 @@ I will probably not touch this again, but there's a bunch of stuff that could be
 Dataset: Kaggle - borismarjanovic/price-volume-data-for-all-us-stocks-etfs
 Google my beloved.
 
-# Note/Disclaimer
+## Note/Disclaimer
 This project is for educational and research purposes only. It does not constitute financial advice. Stock market prediction is inherently uncertain, and past performance does not guarantee future results. Do not use this model for actual trading without extensive validation and risk management (Although, it would be funny).
