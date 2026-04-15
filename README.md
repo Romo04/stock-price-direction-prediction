@@ -42,14 +42,14 @@ stock-price-direction-prediction/
     
 ## Installation
 
-## Clone the repository
+### Clone the repository
 git clone
 
-## Install dependencies
+### Install dependencies
 pip install pandas numpy matplotlib scikit-learn xgboost kagglehub
 
-## Download dataset (automatic on first run)
-## Or manually from: https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs
+### Download dataset (automatic on first run)
+**Or manually from: https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs**
 
 ## Usage
 
@@ -59,9 +59,13 @@ python train.py
 
 ### This will:
     Load and preprocess the data
+
     Engineer 18 technical features
+
     Train both models
+
     Evaluate on test set (2012-2017)
+    
     Save models and visualizations
 
 ## Making Predictions
@@ -116,7 +120,7 @@ XGBoost:
     Max depth: 4 (shallower to prevent overfitting)
 
     Learning rate: 0.1
-    
+
     Subsample: 0.8
 
 ## Limitations
