@@ -2,11 +2,6 @@
 
 A machine learning project that predicts the next-day direction (Up/Down) of stock prices using technical indicators and ensemble methods.
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0+-orange.svg)
-![XGBoost](https://img.shields.io/badge/XGBoost-1.5+-red.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-
 ## Overview
 
 This project implements and compares two machine learning approaches for stock price direction prediction:
