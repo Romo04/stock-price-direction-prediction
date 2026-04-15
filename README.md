@@ -53,11 +53,11 @@ pip install pandas numpy matplotlib scikit-learn xgboost kagglehub
 
 ## Usage
 
-## Training Models
+### Training Models
 **Train the models by running:**
 python train.py
 
-## This will:
+### This will:
     Load and preprocess the data
     Engineer 18 technical features
     Train both models
@@ -68,17 +68,19 @@ python train.py
 **You can predict on new data (a different dataset) as long as it has the same structure as the stocks that the kaggle datasets use:**
 python predict.py amzn.us.txt rf
 
-## Evaluate with accuracy:
+### Evaluate with accuracy:
 python predict.py msft.us.txt rf eval
 
-## Or other models (using your own model shouldn't be hard at all to add):
+### Or other models (using your own model shouldn't be hard at all to add):
 python predict.py amzn.us.txt xgb eval
 
 ## Results
 
-## Model performance (accuracy):
+### Model performance (accuracy):
 Random Forest: 51.69%
+
 XGBoost: 50.95%
+
 Baseline (Random): 50%
 
 ## Findings
@@ -93,22 +95,28 @@ This suggests short-term momentum effects exist in AAPL stock, at least i think.
 
 ## Methodology
 
-## Data Preprocessing
+### Data Preprocessing
     Train/Test Split: Time-based split at January 1, 2012 (roughly a 80/20 split)
     Feature Scaling: Not required for tree-based models
     Missing Values: Dropped 199 rows (warm-up period for indicators)
 
-## Model Configuration
+### Model Configuration
 Random Forest:
     200 estimators
+
     Max depth: 10
+
     Min samples split: 30
+
     Min samples leaf: 15
 
 XGBoost:
     200 estimators
+
     Max depth: 4 (shallower to prevent overfitting)
+
     Learning rate: 0.1
+    
     Subsample: 0.8
 
 ## Limitations
