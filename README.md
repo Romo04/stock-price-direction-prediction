@@ -48,8 +48,8 @@ git clone
 ## Install dependencies
 pip install pandas numpy matplotlib scikit-learn xgboost kagglehub
 
-# Download dataset (automatic on first run)
-# Or manually from: https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs
+## Download dataset (automatic on first run)
+## Or manually from: https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs
 
 ## Usage
 
